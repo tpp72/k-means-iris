@@ -34,11 +34,11 @@ st.markdown("""
     .main-header {
         padding: 2rem 2.2rem;
         border-radius: 22px;
-        border: 1px solid rgba(99, 175, 96, 0.28);
+        border: 1px solid rgba(106, 27, 154, 0.28);
         background:
-            radial-gradient(circle at top left, rgba(76, 175, 80, 0.22), transparent 55%),
-            linear-gradient(135deg, rgba(46, 125, 50, 0.16), rgba(30, 136, 229, 0.10));
-        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.12);
+            radial-gradient(circle at top left, rgba(171, 71, 188, 0.22), transparent 55%),
+            linear-gradient(135deg, rgba(106, 27, 154, 0.16), rgba(171, 71, 188, 0.10));
+        box-shadow: 0 10px 30px rgba(106, 27, 154, 0.12);
         text-align: center;
         margin-bottom: 1.4rem;
         animation: fadeInDown 0.6s ease;
@@ -49,7 +49,7 @@ st.markdown("""
         font-size: 2.6rem;
         font-weight: 800;
         letter-spacing: 0.5px;
-        background: linear-gradient(90deg, #43a047, #1e88e5);
+        background: linear-gradient(90deg, #6a1b9a, #ab47bc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -70,40 +70,40 @@ st.markdown("""
     /* Tabs */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
-        border-bottom: 2px solid rgba(99, 175, 96, 0.2);
+        border-bottom: 2px solid rgba(106, 27, 154, 0.2);
     }
 
     .stTabs [data-baseweb="tab"] {
         border-radius: 10px 10px 0 0;
         padding: 0.6rem 1.4rem;
         font-weight: 600;
-        color: #2e7d32;
-        background-color: rgba(76, 175, 80, 0.06);
+        color: #6a1b9a;
+        background-color: rgba(171, 71, 188, 0.06);
     }
 
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(90deg, #43a047, #2e7d32);
+        background: linear-gradient(90deg, #6a1b9a, #4a148c);
         color: white !important;
     }
 
     /* Metric cards */
     .metric-card {
         padding: 1.4rem;
-        border: 1px solid rgba(99, 175, 96, 0.22);
+        border: 1px solid rgba(106, 27, 154, 0.22);
         border-radius: 15px;
-        background: rgba(76, 175, 80, 0.05);
+        background: rgba(171, 71, 188, 0.05);
         text-align: center;
         transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .metric-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 25px rgba(46, 125, 50, 0.18);
+        box-shadow: 0 12px 25px rgba(106, 27, 154, 0.18);
     }
 
     .metric-card h3 {
         margin: 0;
-        color: #2e7d32;
+        color: #6a1b9a;
         font-size: 1rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -118,12 +118,12 @@ st.markdown("""
 
     /* Result card */
     .result-card {
-        background: linear-gradient(135deg, #43a047 0%, #1e88e5 100%);
+        background: linear-gradient(135deg, #6a1b9a 0%, #ab47bc 100%);
         padding: 2rem;
         border-radius: 18px;
         color: white;
         text-align: center;
-        box-shadow: 0 15px 35px rgba(46, 125, 50, 0.3);
+        box-shadow: 0 15px 35px rgba(106, 27, 154, 0.3);
         margin: 2rem 0;
         animation: fadeInDown 0.5s ease;
     }
@@ -143,7 +143,7 @@ st.markdown("""
 
     /* Button styling */
     .stButton>button {
-        background: linear-gradient(90deg, #43a047, #2e7d32);
+        background: linear-gradient(90deg, #6a1b9a, #4a148c);
         color: white;
         border: none;
         padding: 0.75rem 2rem;
@@ -156,12 +156,12 @@ st.markdown("""
 
     .stButton>button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 22px rgba(46, 125, 50, 0.3);
+        box-shadow: 0 8px 22px rgba(106, 27, 154, 0.3);
     }
 
     /* Sliders */
     .stSlider [data-baseweb="slider"] > div > div {
-        background: linear-gradient(90deg, #43a047 0%, #1e88e5 100%);
+        background: linear-gradient(90deg, #6a1b9a 0%, #ab47bc 100%);
     }
 
     /* Dataframes */
