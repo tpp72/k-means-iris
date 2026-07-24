@@ -189,16 +189,7 @@ st.markdown("""
         margin: 1rem 0;
     }
 
-    /* Footer */
-    .app-footer {
-        text-align: center;
-        padding: 1.5rem 0 0.5rem 0;
-        opacity: 0.75;
-    }
 
-    .app-footer p {
-        margin: 0.25rem 0;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -547,9 +538,5 @@ if model is not None:
 
 # Footer
 st.markdown("---")
-st.markdown("""
-<div class="app-footer">
-    <p>🎓 <strong>Machine Learning for Python Programming Course</strong></p>
-    <p>Built with ❤️ using Streamlit | © 2026</p>
-</div>
-""", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;color:#5a6b8c;margin-top:30px;'>Made with Streamlit · Machine Learning Projects</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;color:#5a6b8c;margin-top:4px;'>Develop By tpp72</p>", unsafe_allow_html=True)
