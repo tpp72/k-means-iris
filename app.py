@@ -30,32 +30,17 @@ st.markdown("""
         font-family: 'Poppins', sans-serif;
     }
 
-    /* Main theme */
-    .stApp {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 55%, #6f42c1 100%);
-        background-attachment: fixed;
-    }
-
-    /* Container styling */
-    .main .block-container,
-    [data-testid="stAppViewBlockContainer"],
-    [data-testid="stMainBlockContainer"] {
-        background-color: rgba(255, 255, 255, 0.97);
-        border-radius: 20px;
-        padding: 2.5rem;
-        box-shadow: 0 20px 60px rgba(31, 12, 74, 0.25);
-        max-width: 1200px;
-    }
-
     /* Header styling */
     .main-header {
-        background: linear-gradient(120deg, #667eea 0%, #764ba2 60%, #a05fd1 100%);
-        padding: 2.5rem 2rem;
-        border-radius: 18px;
-        color: white;
+        padding: 2rem 2.2rem;
+        border-radius: 22px;
+        border: 1px solid rgba(99, 175, 96, 0.28);
+        background:
+            radial-gradient(circle at top left, rgba(76, 175, 80, 0.22), transparent 55%),
+            linear-gradient(135deg, rgba(46, 125, 50, 0.16), rgba(30, 136, 229, 0.10));
+        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.12);
         text-align: center;
-        margin-bottom: 2rem;
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.35);
+        margin-bottom: 1.4rem;
         animation: fadeInDown 0.6s ease;
     }
 
@@ -64,13 +49,17 @@ st.markdown("""
         font-size: 2.6rem;
         font-weight: 800;
         letter-spacing: 0.5px;
+        background: linear-gradient(90deg, #43a047, #1e88e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .main-header p {
         margin: 0.6rem 0 0 0;
         font-size: 1.15rem;
         font-weight: 400;
-        opacity: 0.92;
+        opacity: 0.82;
     }
 
     @keyframes fadeInDown {
@@ -81,41 +70,40 @@ st.markdown("""
     /* Tabs */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
-        border-bottom: 2px solid #eef0fb;
+        border-bottom: 2px solid rgba(99, 175, 96, 0.2);
     }
 
     .stTabs [data-baseweb="tab"] {
         border-radius: 10px 10px 0 0;
         padding: 0.6rem 1.4rem;
         font-weight: 600;
-        color: #667eea;
-        background-color: #f5f7fd;
+        color: #2e7d32;
+        background-color: rgba(76, 175, 80, 0.06);
     }
 
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(90deg, #43a047, #2e7d32);
         color: white !important;
     }
 
     /* Metric cards */
     .metric-card {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        padding: 1.5rem;
+        padding: 1.4rem;
+        border: 1px solid rgba(99, 175, 96, 0.22);
         border-radius: 15px;
+        background: rgba(76, 175, 80, 0.05);
         text-align: center;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
-        border: 1px solid rgba(102, 126, 234, 0.15);
     }
 
     .metric-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 25px rgba(102, 126, 234, 0.25);
+        box-shadow: 0 12px 25px rgba(46, 125, 50, 0.18);
     }
 
     .metric-card h3 {
         margin: 0;
-        color: #667eea;
+        color: #2e7d32;
         font-size: 1rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -126,17 +114,16 @@ st.markdown("""
         margin: 0.5rem 0 0 0;
         font-size: 2rem;
         font-weight: 700;
-        color: #333;
     }
 
     /* Result card */
     .result-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #43a047 0%, #1e88e5 100%);
         padding: 2rem;
         border-radius: 18px;
         color: white;
         text-align: center;
-        box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 15px 35px rgba(46, 125, 50, 0.3);
         margin: 2rem 0;
         animation: fadeInDown 0.5s ease;
     }
@@ -154,20 +141,9 @@ st.markdown("""
         text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
     }
 
-    /* Sidebar styling */
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #f5f7fa 0%, #dfe4f3 100%);
-        border-right: 1px solid rgba(102, 126, 234, 0.15);
-    }
-
-    [data-testid="stSidebar"] h2 {
-        color: #4b3f8f;
-        font-weight: 700;
-    }
-
     /* Button styling */
     .stButton>button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(90deg, #43a047, #2e7d32);
         color: white;
         border: none;
         padding: 0.75rem 2rem;
@@ -175,18 +151,17 @@ st.markdown("""
         font-weight: 600;
         font-size: 1rem;
         transition: all 0.25s ease;
-        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         width: 100%;
     }
 
     .stButton>button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 22px rgba(102, 126, 234, 0.55);
+        box-shadow: 0 8px 22px rgba(46, 125, 50, 0.3);
     }
 
     /* Sliders */
     .stSlider [data-baseweb="slider"] > div > div {
-        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(90deg, #43a047 0%, #1e88e5 100%);
     }
 
     /* Dataframes */
@@ -197,36 +172,28 @@ st.markdown("""
     }
 
     /* Info box */
-    .info-box, .info-box * {
-        color: #0d3c61;
-    }
     .info-box {
-        background: #e3f2fd;
-        border-left: 5px solid #2196f3;
+        background: rgba(30, 136, 229, 0.08);
+        border-left: 5px solid #1e88e5;
         padding: 1rem 1.2rem;
         border-radius: 10px;
         margin: 1rem 0;
     }
 
     /* Success box */
-    .success-box, .success-box * {
-        color: #1b4d20;
-    }
     .success-box {
-        background: #e8f5e9;
-        border-left: 5px solid #4caf50;
+        background: rgba(76, 175, 80, 0.08);
+        border-left: 5px solid #43a047;
         padding: 1rem 1.2rem;
         border-radius: 10px;
         margin: 1rem 0;
     }
 
     /* Footer */
-    .app-footer, .app-footer * {
-        color: #4a4a5c !important;
-    }
     .app-footer {
         text-align: center;
         padding: 1.5rem 0 0.5rem 0;
+        opacity: 0.75;
     }
 
     .app-footer p {
@@ -264,15 +231,15 @@ if model is not None:
     with st.sidebar:
         st.markdown("## 📋 About")
         st.info("""
-        This application uses a trained K-Means clustering model to predict 
+        This application uses a trained K-Means clustering model to predict
         cluster assignments based on input features.
-        
+
         **Model Details:**
         - Algorithm: K-Means
         - Dataset: Iris
         - Features: 4
         """)
-        
+
         st.markdown("---")
         st.markdown("## 🎯 How to Use")
         st.markdown("""
@@ -280,8 +247,9 @@ if model is not None:
         2. **CSV Upload**: Upload a CSV file for batch predictions
         3. **View Results**: See cluster assignments and visualizations
         """)
-        
+
         st.markdown("---")
+        st.caption("ผลลัพธ์เป็นการจัดกลุ่มแบบ Unsupervised Learning ไม่ใช่การจำแนกที่มีป้ายกำกับจริง")
         if st.button("🔄 Reset All"):
             st.rerun()
     
